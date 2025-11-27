@@ -28,7 +28,7 @@ jobs:
         run: forge --version
 
       - name: Install dependencies
-        run: forge install
+        run: forge install foundry-rs/forge-std OpenZeppelin/openzeppelin-contracts
 
       - name: Run Forge fmt
         run: forge fmt --check
