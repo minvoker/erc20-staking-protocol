@@ -190,8 +190,7 @@ contract StakingPoolTest is Test {
         vm.prank(user1);
         pool.stake(STAKE_AMOUNT);
 
-        (uint256 staked, uint256 earned, uint256 rate, uint256 periodEnd) =
-            pool.getStakeInfo(user1);
+        (uint256 staked, uint256 earned, uint256 rate, uint256 periodEnd) = pool.getStakeInfo(user1);
 
         assertEq(staked, STAKE_AMOUNT);
         assertEq(earned, 0); // Just staked, no time passed

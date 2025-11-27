@@ -15,7 +15,7 @@ contract DeployScript is Script {
         RewardToken token = new RewardToken(
             "Staking Reward Token",
             "STRWD",
-            1_000_000 ether  // 1 million tokens
+            1_000_000 ether // 1 million tokens
         );
 
         // Deploy staking pool
