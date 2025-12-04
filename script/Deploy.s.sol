@@ -13,8 +13,8 @@ contract DeployScript is Script {
 
         // Deploy reward token
         RewardToken token = new RewardToken(
-            "Staking Reward Token",
-            "STRWD",
+            "Dirt Coin",
+            "DIRT",
             1_000_000 ether // 1 million tokens
         );
 
